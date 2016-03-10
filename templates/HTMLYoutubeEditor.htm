@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Insert Youtube for Shortcode</title>
+        <script type="text/javascript" src="/framework/thirdparty/tinymce/tiny_mce_popup.js"></script>
+        <script type="text/javascript" src="/framework/thirdparty/jquery/jquery.js"></script>
+        <script type="text/javascript" src="/youtube/javascript/youtubeOptions.js"></script>
+</head>
+<body id="HTMLEditorYoutube" >
+<!--form id="form_HTMLEditorYoutube" onsubmit="YoutubeDialog.update();return false;" action="#"-->
+<form id="form_HTMLEditorYoutube" action="#">
+	<div class="panel_wrapper">
+		<div id="general_panel" class="panel current">
+			<div>
+			  <h3>Youtube Options</h3>
+                          <p></p>                              
+			  <select name="YoutubesOption" id="YoutubesOption">
+                              <option value="select" id="ListOutYoutubeOptionsHere">-Select-</option>
+			  </select>
+			</div>
+		</div>
+	</div>
+	<div class="mceActionPanel">
+		<input type="submit" id="insert" name="insert" onclick="SubmitYoutubeDialog();" value="Insert" />
+		<input type="button" id="cancel" name="cancel" onclick="tinyMCEPopup.close();" value="Close"  />
+	</div>
+</form>
+</body>
+</html>
